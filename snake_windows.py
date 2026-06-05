@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
-# Snake game using tkinter  which runs on Windows with zero external dependencies.
+# Snake game using tkinter which runs on Windows with zero external dependencies.
 # Original curses version by EngineerMan (YouTube) / GithubYorkieWoW.
 # Tkinter port preserves all original game logic with improved graphics and sprites.
 
-# Play instructions: python snake_tkinter.py   (no external dependencies needed — tkinter is built in)
+# Play instructions:  Double click python file in download location OR navigate to game directory in terminal and run "python snake_windows.py"   
+# no external dependencies needed — tkinter is a built in module
 
 import tkinter as tk
 import random
@@ -34,7 +35,7 @@ PANEL_BG    = "#111111"
 class SnakeGame:
     def __init__(self, root: tk.Tk):
         self.root = root
-        root.title("Snake")
+        root.title("Py3Snake - Windows Edition")
         root.resizable(False, False)
         root.configure(bg=PANEL_BG)
 
@@ -248,7 +249,7 @@ class SnakeGame:
             )
 
 
-# ── Entry point ──────────────────────────────────────────────────────────────
+# Entry point
 if __name__ == "__main__":
     root = tk.Tk()
     SnakeGame(root)
