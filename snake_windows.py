@@ -70,7 +70,7 @@ class SnakeGame:
         footer.pack(fill="x")
         tk.Label(
             footer,
-            text="Controls = Arrow Keys / WASD  ·  R = Restart  ·  Q = Quit",
+            text="Controls = Arrow Keys / WASD  ·  R = Restart  ·  Q = Quit\n Original game by EngineerMan on YouTube, ported by Github.com/YorkieWoW",
             font=("Consolas", 9),
             fg=DIM, bg=PANEL_BG
         ).pack()
